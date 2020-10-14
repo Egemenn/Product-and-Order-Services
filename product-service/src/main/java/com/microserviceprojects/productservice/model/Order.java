@@ -1,4 +1,4 @@
-package com.microserviceprojects.orderservice.entity;
+package com.microserviceprojects.productservice.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

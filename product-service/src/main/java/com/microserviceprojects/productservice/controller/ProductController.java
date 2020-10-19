@@ -57,8 +57,8 @@ public class ProductController {
         productService.deleteAll();
     }
 
-    @PutMapping
-    public Product updateProduct(Product product){
+    @PutMapping(value = "/{id}")
+    public Product updateProduct(@RequestBody Product product){
         return productService.updateProduct(product);
     }
 

@@ -21,6 +21,7 @@ public class OrderService implements IOrderService {
     }
      */
 
+
     @HystrixCommand(fallbackMethod = "userfallbackMethod", commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000") })
     public Order save(Order order) {
